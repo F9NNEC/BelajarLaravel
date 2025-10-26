@@ -30,6 +30,15 @@ Route::get('/user/{id}', function ($id) {
     return view('user.profile', ['id'=> $id]);
 });
 
+Route::get('/userlist', function () {
+    $data = [
+        ['nama'=> 'adit', 'role' => 'user', 'id' => 1],
+        ['nama'=> 'perdi', 'role' => 'user', 'id' => 2],
+        ['nama'=> 'galih', 'role' => 'user', 'id' => 3],
+    ];
+    return view('user.list', ['data'=> $data]);
+});
+
 // Route::get('/clear.cache', function () {
 //     $run = Artisan::call('config:clear');
 //     $run = Artisan::call('cache:clear');
