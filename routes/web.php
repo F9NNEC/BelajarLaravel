@@ -22,11 +22,11 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/user', function () {
+Route::get('/dashboard', function () {
     return view('user.dashboard');
 });
 
-Route::get('/user/{id}', function ($id) {
+Route::get('/dashboard/{id}', function ($id) {
     return view('user.profile', ['id'=> $id]);
 });
 
