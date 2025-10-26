@@ -8,10 +8,18 @@
 </head>
 <body>
     <nav>
-        <a href="/">Home</a>
-        <a href="/about">about</a>
-        <a href="/contact">contact</a>
-        <a href="/dashboard">Dashboard</a>
+        <x-navLink href="/" active="1">
+            Home
+        </x-navLink>
+        <x-navLink href="/about">
+            About Us
+        </x-navLink>
+        <x-navLink href="/contact">
+            Contact
+        </x-navLink>
+        <x-navLink href="/dashboard">
+            Dashboard
+        </x-navLink>
     </nav>
     <main>
         {{ $slot }}
