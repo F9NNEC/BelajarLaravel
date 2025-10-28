@@ -1,4 +1,4 @@
 @props(['active' => ''])
 
-<a href="{{ $attributes->get('href') }}">{{ $slot }} {{ $active }}</a>
+<a class="{{ $attributes->get('class') }}" href="{{ $attributes->get('href') }}">{{ $slot }} {{ $active }}</a>
 {{-- <a {{ $attributes }} > {{ $slot }} </a> --}}

@@ -22,22 +22,22 @@
         <nav aria-label="Global" class="hidden md:block">
             <ul class="flex items-center gap-6 text-sm">
             <li>
-                <x-navLink class="text-gray-500 transition hover:text-gray-500/75" href="/dashboard"> 
+                <x-navLink class="text-gray-500 transition hover:text-blue-500/75" href="/dashboard"> 
                     Dashboard </x-navLink>
             </li>
 
             <li>
-                <x-navLink class="text-gray-500 transition hover:text-gray-500/75" href="/about"> 
+                <x-navLink class="text-gray-500 transition hover:text-blue-500/75" href="/about"> 
                     About </x-navLink>
             </li>
 
             <li>
-                <x-navLink class="text-gray-500 transition hover:text-gray-500/75" href="/contact"> 
+                <x-navLink class="text-gray-500 transition hover:text-blue-500/75" href="/contact"> 
                     Contact </x-navLink>
             </li>
 
             <li>
-                <x-navLink class="text-gray-500 transition hover:text-gray-500/75" href="/userlist"> 
+                <x-navLink class="text-gray-500 transition hover:text-blue-500/75" href="/userlist"> 
                     List User </x-navLink>
             </li>
         </nav>
