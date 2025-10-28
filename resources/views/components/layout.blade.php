@@ -22,22 +22,22 @@
         <nav aria-label="Global" class="hidden md:block">
             <ul class="flex items-center gap-6 text-sm">
             <li>
-                <x-navLink class="text-gray-500 transition hover:text-blue-500/75" href="/dashboard"> 
+                <x-navLink class="text-gray-500 transition hover:text-teal-600" href="/dashboard" :active="request()->is('dashboard')"> 
                     Dashboard </x-navLink>
             </li>
 
             <li>
-                <x-navLink class="text-gray-500 transition hover:text-blue-500/75" href="/about"> 
+                <x-navLink class="text-gray-500 transition hover:text-teal-600" href="/about" :active="request()->is('about')"> 
                     About </x-navLink>
             </li>
 
             <li>
-                <x-navLink class="text-gray-500 transition hover:text-blue-500/75" href="/contact"> 
+                <x-navLink class="text-gray-500 transition hover:text-teal-600" href="/contact" :active="request()->is('contact')"> 
                     Contact </x-navLink>
             </li>
 
             <li>
-                <x-navLink class="text-gray-500 transition hover:text-blue-500/75" href="/userlist"> 
+                <x-navLink class="text-gray-500 transition hover:text-teal-600" href="/userlist" :active="request()->is('userlist')"> 
                     List User </x-navLink>
             </li>
         </nav>
