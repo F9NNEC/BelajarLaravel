@@ -32,7 +32,7 @@ Route::get('/dashboard/{id}', function ($id) {
 });
 
 Route::get('/userlist', function () {
-    $data = Siswa::all();
+    $data = Siswa::orderBy('tanggal_lahir', 'desc')->get();
     return view('user.list', ['data'=> $data]);
 });
 
