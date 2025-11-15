@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Siswa;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -31,11 +32,7 @@ Route::get('/dashboard/{id}', function ($id) {
 });
 
 Route::get('/userlist', function () {
-    $data = [
-        ['nama'=> 'adit', 'role' => 'user', 'id' => 1],
-        ['nama'=> 'perdi', 'role' => 'user', 'id' => 2],
-        ['nama'=> 'galih', 'role' => 'user', 'id' => 3],
-    ];
+    $data = Siswa::all();
     return view('user.list', ['data'=> $data]);
 });
 
